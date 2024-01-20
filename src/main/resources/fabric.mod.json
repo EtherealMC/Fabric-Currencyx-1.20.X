@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "currencyxmod",
+	"version": "${version}",
+	"name": "Currencyx mod",
+	"description": "This is a mod for a custom currency, used to upgrade player stats, created by Ethereal_MC",
+	"authors": [
+		"Ethereal_MC"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/currencyxmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.etherealmc.currencyxmod.CurrencyxMod"
+		],
+		"client": [
+			"net.etherealmc.currencyxmod.CurrencyxModClient"
+		],
+		"fabric-datagen": [
+			"net.etherealmc.currencyxmod.CurrencyxModDataGenerator"
+		]
+	},
+	"mixins": [
+		"currencyxmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
